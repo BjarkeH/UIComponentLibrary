@@ -1,0 +1,32 @@
+{
+    "context": {
+        "colors": [
+            {
+                "id": 1,
+                "hexCode": "#696370",
+                "name": "Fogged Gray"
+            }, 
+            {
+                "id": 2,
+                "hexCode": "#FF1769",
+                "name": "Midtown Pink"
+            },
+            {
+                "id": 3,
+                "hexCode": "#78EFED",
+                "name": "Baby blue"
+            },
+            {
+                "id": 4,
+                "hexCode": "#010000",
+                "name": "Reaper Black"
+            },
+            {
+               "id": 5,
+                "hexCode": "#BCD630",
+               "name": "Avocado"
+            }
+
+        ]
+    }
+}

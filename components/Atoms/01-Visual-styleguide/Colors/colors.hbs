@@ -1,0 +1,13 @@
+<div class="demo">
+    <div class="container">
+        <div class="row">
+            {{#each colors}}
+                <div class="col-md-2 col-sm-3 col-xs-12">
+                    <div class="box" style="width: 100%; padding-top: 100%; background-color: {{hexCode}}; position: relative">
+                        <p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-weight: bold; font-family: arial, sans-serif; text-transform: uppercase;"><em>{{name}}</em></p>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

@@ -7,6 +7,13 @@ Run the
 npm install 
 ```
 
+Next rune the default gulp task
+```
+gulp
+```
+
+Which will fire up a webserver with livereload and the Fractal environment ready. 
+
 from the project folder 
 
 # Fractal Design Components

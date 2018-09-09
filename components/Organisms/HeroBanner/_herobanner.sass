@@ -1,6 +1,6 @@
 .banner
   background: 
-    image: url('https://images.pexels.com/photos/290525/pexels-photo-290525.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
+    // image: url('https://images.pexels.com/photos/290525/pexels-photo-290525.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
     // image: url('https://images.pexels.com/photos/815996/pexels-photo-815996.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
     // image: url('https://images.pexels.com/photos/860509/pexels-photo-860509.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
     // image: url('https://images.pexels.com/photos/428546/pexels-photo-428546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
@@ -11,18 +11,45 @@
     // image: url('https://images.pexels.com/photos/405239/pexels-photo-405239.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
     // image: url('https://images.pexels.com/photos/908890/pexels-photo-908890.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
     // image: url('https://images.pexels.com/photos/1371313/pexels-photo-1371313.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
-    image: url('https://images.pexels.com/photos/1253724/pexels-photo-1253724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')   
-    image: url('../images/fashion-female-girl-41539.jpg') 
-    image: url('../images/beautiful-casual-clothing-206558.jpg') 
+    // image: url('https://images.pexels.com/photos/1253724/pexels-photo-1253724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')   
+    // image: url('../images/fashion-female-girl-41539.jpg') 
+    // image: url('../images/beautiful-casual-clothing-206558.jpg') 
+    // image: url('../images/cityBG.jpeg') 
+    // image: url('../images/girlmodel.png') 
     // position: center -200px
-    position: center
-    size: contain
-    repeat: no-repeat
-  height: 500px
+    // position: 1000px 150px
+    // size: 910px
+    // repeat: no-repeat
+  height: 600px
+  // filter: blur(1px)
   // height: 100vh
   position: relative
   padding-top: 80px
-  overflow: hidden
+  // overflow: hidden
+  z-index: 900
+
+  &__title
+    margin-top: 180px
+
+  &__graphic-img
+    max-width: 600px
+    margin-top: 80px
+
+
+  &__background
+    height: 500px
+    filter: blur(3px)
+    position: absolute
+    top: $headerHeight
+    padding:
+      top: 80px
+    width: 100%
+    background:
+      // image: url('../images/cityBG.jpeg')
+      image: linear-gradient(to right, rgba(142, 158, 171, 0.5), rgba(238, 242, 243, 0.5))
+      image: linear-gradient(to right, rgba(230, 218, 218, 0.5), rgba(39, 64, 70, 0.5))
+      size: cover
+      position: center
 
   &__overlay 
     position: absolute
@@ -30,8 +57,9 @@
     left: 0
     width: 100%
     height: 100%
-    display: flex
-    align-items: center
+    // display: flex
+    // align-items: center
+    filter: blur(0px)
     background: linear-gradient(to right, rgba(156, 236, 251, 0.75), rgba(0, 82, 212,0.75))
 
     &--grad-relay

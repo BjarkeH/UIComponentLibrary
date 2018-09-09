@@ -1,3 +1,6 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400,700|Montserrat:400,800')
+    
 // Reset
 @import './base/reset'
   
@@ -7,10 +10,12 @@
 // Base rules
 @import './base/vars'
 @import './base/gridaddons'
+@import './base/responsive-mixins'
+@import './base/utils'
 
 
 // Components
-@import '../Atoms/Typography/Mainheading'
-@import '../Atoms/Typography/Articleheading'
-@import '../Organisms/Banner/Banner'
+@import '../Atoms/02-Typography/01-Maintitle/maintitle'    
+@import '../Atoms/02-Typography/base'    
+@import '../Organisms/HeroBanner/herobanner'
 @import '../Organisms/Header/Header'
