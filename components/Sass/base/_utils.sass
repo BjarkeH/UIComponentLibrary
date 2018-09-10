@@ -1,5 +1,5 @@
 .hidden    
-    &-md
+    &-sm
         @include breakpoint('mobile')
             display: none
         
@@ -10,4 +10,15 @@
         
         @include breakpoint('desktop')
             display: block
+
+    &-xs
+        @include breakpoint('mobile')
+            display: none
         
+        @include breakpoint('tablet')
+            display: block
+        @include breakpoint('phablet')
+            display: block
+        
+        @include breakpoint('desktop')
+            display: block

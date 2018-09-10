@@ -1,9 +1,10 @@
-{
-    "status": "wip",
+{    
     "context": {
         "isDev": true,
         "ctaButton": {
-            "text": "A sample CTA Button"
+            "text": "A sample CTA Button",
+            "isGray": true,
+            "isPink": true
         }
     }
 }

@@ -1,8 +1,16 @@
 {
-    "context": {
+    "context": {        
         "isDev": false,
+        "heroBanner": {
+            "withBg": "true",
+            "hasPinkText": true,
+            "isGray": true,
+            "isColoured": true
+        },
         "ctaButton": {
-            "text": "Browse the catalogue"
+            "text": "Browse the catalogue",
+            "isGray": true,
+            "isPink": true
         }
     }
 }
