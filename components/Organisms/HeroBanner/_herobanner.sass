@@ -67,3 +67,60 @@
       background: linear-gradient(to right, rgba(58, 28, 113, 0), rgba(215, 109, 119,0), rgba(255, 175, 123,0))
       // background: rgba(0,0,0,0.5)
 
+    &--grad-pink
+      background: linear-gradient(to right, rgb(221, 94, 137), rgb(247, 187, 151))      
+      // background: rgba(0,0,0,0.5)
+
+
+  &--coloured
+    height: 500px
+    // background: pink
+    background:
+      image: linear-gradient(to right, rgb(221, 94, 137), rgb(247, 187, 151))
+    padding-top: 0px
+    margin-top: 20px
+
+    h1
+      font:
+        size: 60px
+      color: white
+      position: relative
+
+      &::after
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 100%
+        height: calc(100% + 40px)
+        border:
+          top: 1px solid white
+          bottom: 1px solid white
+
+    .banner
+      &__title
+        height: 500px
+        display: flex
+        align-items: center
+        margin-top: 0px
+        
+
+        .titlewrapper
+          margin-top: -50px
+          position: relative
+          .btn
+            position: absolute
+            top: calc(100% + 50px)            
+          
+
+      &__graphic-img
+        max-width: 100%
+        margin-top: 0px
+        height: 500px
+        display: flex
+        align-items: flex-end
+        justify-content: flex-end
+        img
+          max-width: 85%
+          transform: translateY(60px)

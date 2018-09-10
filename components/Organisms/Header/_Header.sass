@@ -5,10 +5,13 @@
   left: 0
   height: $headerHeight
   background: #fff
-  line-height: $headerHeight
+  // line-height: $headerHeight
   z-index: 1100
   overflow: hidden
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.5)
+
+  &--no-shadow
+    box-shadow: none
 
   .logo
     &__wrapper
@@ -33,10 +36,16 @@
 
       li
         float: left
+        height: $headerHeight
+        display: flex
+        align-items: center
 
         a
-          margin:
-            left: 20px
+          // margin:
+          //   left: 20px
+          padding:
+            left: 15px
+            right: 15px
           font:
             family: Verdana
             size: 15px
