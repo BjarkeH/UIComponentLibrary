@@ -1,0 +1,14 @@
+{{#if isDev}}
+<div class="demo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <p class="spacing spacing--bot-md">The pink button is a good contrast to the neutral gray or whitespace areas, it's usage is based around drawing attention for people to click.</p>
+                {{/if}}
+                <button class="btn btn--cta {{#if ctaButton.isPink}}btn--cta--pink{{/if}}">{{ctaButton.text}}</button>
+                {{#if isDev}}
+            </div>
+        </div>
+    </div>
+</div>
+{{/if}}

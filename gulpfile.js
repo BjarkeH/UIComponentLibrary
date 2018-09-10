@@ -6,6 +6,7 @@ var rename = require('gulp-rename');
 var cssnano = require('gulp-cssnano');
 var sourcemaps = require('gulp-sourcemaps');
 var wait = require('gulp-wait');
+var concat = require('gulp-concat');
 
 var fractal = require('./fractal.js');
 const logger = fractal.cli.console; // Storing a reference to the fractal CLI console utility
@@ -20,6 +21,14 @@ const logger = fractal.cli.console; // Storing a reference to the fractal CLI co
  * Look into FTP 
  */
 
+gulp.task("scripts", ()=> {
+  return gulp
+    .src('./Components/**/*.js')
+    .pipe(sourcemaps.init())
+    .pipe(concat('script.js'))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('www/assets/js/'));
+});
 
 gulp.task('compile:sass', ()=> {
   return gulp
@@ -44,9 +53,10 @@ gulp.task('compile:sass', ()=> {
 
 gulp.task('watchers:start', ()=> {
   gulp.watch(['./Components/**/*.sass', './Components/**/*.scss'], ['compile:sass']);
+  gulp.watch('./Components/**/*.js', ['scripts']);
 });
 
-gulp.task('default', ['fractal:start', 'compile:sass', 'watchers:start']);
+gulp.task('default', ['fractal:start', 'compile:sass', 'scripts', 'watchers:start']);
 
 /**
  * Fractal related -v- 

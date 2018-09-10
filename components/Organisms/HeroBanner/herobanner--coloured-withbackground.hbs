@@ -1,0 +1,27 @@
+<div class="container">    
+    <div class="banner banner--coloured container container--remove-padding" {{#if heroBanner.withBg}} style="background-image:  linear-gradient(to right, rgba(221, 94, 137, 0.85), rgba(247, 187, 151, 0.85)), url('https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')" {{/if}}>
+        <div class="row row--no-margins">
+            <div class="col-md-5 col-md-offset-1 col-sm-11 col-xs-11 col-sm-offset-1 col-xs-offset-1">
+                <div class="banner__title">
+                    <span class="titlewrapper">
+                        <h1>
+                            Convenient 
+                            <br>
+                            Comforting
+                            <br>
+                            Clothing
+                        </h1>                    
+                        {{!-- <button class="btn btn--cta">Browse the catalogue</button> --}}
+                        {{> @ctabutton}}
+                    </span>
+                    
+                </div>                
+            </div>
+            <div class="col-md-5 hidden-sm">
+                <div class="banner__graphic-img">
+                    <img src="/assets/images/girlsmilemodel.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>            
+</div>

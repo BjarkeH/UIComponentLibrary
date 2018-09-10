@@ -6,9 +6,11 @@
   
 // External libraries
 @import '../../node_modules/flexboxgrid-sass/flexboxgrid'
+@import '../../node_modules/animate.css/animate.min'
 
 // Base rules
 @import './base/vars'
+@import './base/animations'
 @import './base/responsive-mixins'
 @import './base/gridaddons'
 @import './base/utils'
@@ -17,8 +19,13 @@
 
 // Components
 @import '../Atoms/02-Typography/01-Maintitle/maintitle'    
+@import '../Atoms/02-Typography/02-Subheading/subheading'    
 @import '../Atoms/02-Typography/base'    
 @import '../Atoms/03-Buttons/CTA-Button/ctabutton'    
 @import '../Atoms/03-Buttons/Icon-Button/iconbutton'    
 @import '../Organisms/HeroBanner/herobanner'
 @import '../Organisms/Header/Header'
+
+
+body
+    height: 3000px

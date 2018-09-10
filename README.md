@@ -1,6 +1,6 @@
 REMEMBER this project features surge deployment. which means you can stand in the build directory and deploy straight to a surge subdomain by running the cmd surge
 
-Domains: shirtmeplz.surge.sh 
+Domains: [surge](http://shirtmeplz.surge.sh)
 
 don't forget to teardown
 
@@ -11,7 +11,7 @@ Run the
 npm install 
 ```
 
-Next rune the default gulp task
+Next run the default gulp task
 ```
 gulp
 ```

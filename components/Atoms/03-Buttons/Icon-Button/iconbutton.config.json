@@ -1,0 +1,13 @@
+{
+    "context": {
+        "isDev": true,
+        "iconButton": {            
+            "withText": false,
+            "icon": {
+                "facebook": "fa-facebook-square",
+                "basket": "fa-shopping-basket",
+                "heart": "fa-heart"
+            }
+        }
+    }
+}
