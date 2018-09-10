@@ -1,0 +1,8 @@
+{
+    "context": {
+        "isDev": false,
+        "ctaButton": {
+            "text": "Browse the catalogue"
+        }
+    }
+}

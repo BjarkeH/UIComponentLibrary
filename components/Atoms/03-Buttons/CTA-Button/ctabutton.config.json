@@ -1,0 +1,9 @@
+{
+    "status": "wip",
+    "context": {
+        "isDev": true,
+        "ctaButton": {
+            "text": "A sample CTA Button"
+        }
+    }
+}
