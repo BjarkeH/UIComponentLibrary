@@ -8,6 +8,16 @@ window.addEventListener("DOMContentLoaded", function(){
      * Content Loaded add code
      */
 
+    var cta = document.querySelector('.banner button');
+
+    if(cta === null || cta === undefined){
+        return;
+    }
+
+    cta.addEventListener('click', function(){
+        alert("The Catalogue is not yet implemented, but I am glad that the call to action worked.");
+    });
+
     var animationHasRun = 0;
 
     var bannerGraphic = document.querySelector('.banner__graphic-img');

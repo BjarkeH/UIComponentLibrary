@@ -1,0 +1,72 @@
+.product
+    &-thmb
+        background: white
+        border: 1px solid lighten($color-dark-gray, 40%)
+        position: relative
+        border-radius: 20px
+        overflow: hidden      
+        transition: border-color 0.2s ease-in
+
+        &:hover
+            border: 1px solid $color-brand-pink
+
+        &__salewrapper 
+            width: 200px
+            height: 40px            
+            position: absolute
+            top: 0
+            right: 0
+            background: $color-dark-pink
+            display: flex
+            align-items: center
+            justify-content: center 
+            transform: rotate(45deg) translate(55px, -20px)
+
+            p
+                color: white
+                text:
+                    transform: uppercase
+
+
+        &__img
+            height: 400px
+            display: flex
+            justify-content: center
+            align-items: flex-end
+            overflow: hidden
+
+            a
+                text-align: center
+
+                img
+                    max-width: 70%
+                    margin-top: 20px
+                    border-bottom: 1px solid #ccc
+                    // border-bottom: 1px solid $color-dark-gray
+        
+        &__info
+            padding: 30px 30px
+
+            h4
+                font-size: 18px
+                text-align: center
+                // text-transform: uppercase
+            &__price
+                text-align: center
+                font:
+                    weight: bold
+                margin:
+                    top: 10px
+                &__previous
+                    text-decoration: line-through
+                    color: $color-dark-pink
+                    margin-right: 20px
+
+            &__btns
+                margin:
+                    top: 20px
+                display: flex
+                justify-content: center
+
+                button
+                    margin-left: 15px                    

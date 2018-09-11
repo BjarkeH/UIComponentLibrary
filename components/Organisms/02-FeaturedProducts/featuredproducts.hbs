@@ -1,0 +1,19 @@
+<div class="module featured-products spacing--top-xl">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="featured-products__title">
+                    {{> @subheading}}
+                </div>                
+                <div class="featured-products__short-text">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita nulla dolorem repudiandae rem voluptas iusto facere aspernatur cumque eum repellendus.</p>
+                </div>
+            </div>            
+            {{#each Products}}
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                {{> @productthumbnail}}
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

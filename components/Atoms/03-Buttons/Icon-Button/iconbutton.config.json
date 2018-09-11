@@ -1,12 +1,14 @@
 {
-    "context": {
-        "isDev": true,
+    "context": {        
         "iconButton": {            
+            "isDev": true,
             "withText": false,
             "icon": {
                 "facebook": "fa-facebook-square",
                 "basket": "fa-shopping-basket",
-                "heart": "fa-heart"
+                "heart": "fa-heart",
+                "details": "fa-tshirt",
+                "details-alt": "fa-search"
             }
         }
     }

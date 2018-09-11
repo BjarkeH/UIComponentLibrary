@@ -1,0 +1,53 @@
+{{#if isDev}}
+<div class="demo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 ">
+                
+{{/if}}
+                
+                <div class="product-thmb">
+                    {{#if Product.onSale}}
+                        <div class="product-thmb__salewrapper">
+                            <p>Sale!</p>
+                        </div>
+                    {{/if}}                    
+                    
+                    <div class="product-thmb__img">
+                        <a href="" style="text-align: center;">
+                            <img src="/assets/images/{{Product.image}}" alt="" style="">
+                        </a>
+                        <div class="product-thmb__img__action">
+
+                        </div>
+                    </div>
+                    
+                    <div class="product-thmb__info">
+                        <h4>
+                            {{Product.title}}    
+                        </h4>     
+                        <p class="product-thmb__info__price">
+                            {{#if Product.onSale}}
+                            <span class="product-thmb__info__price__previous">
+                            {{/if}}
+                            {{Product.currency}}
+                            {{Product.price}}
+                            {{#if Product.onSale}}
+                            </span>
+                            {{Product.currency}}
+                            {{Product.salePrice}}
+                            {{/if}}
+                        </p>
+                        <div class="product-thmb__info__btns">
+                            {{> @iconbutton--details-alt}}
+                            {{> @iconbutton}}
+                            {{> @iconbutton--basket}}
+                        </div>
+                    </div>                                        
+                </div>            
+{{#if isDev}}
+            </div>
+        </div>
+    </div>
+</div>
+{{/if}}

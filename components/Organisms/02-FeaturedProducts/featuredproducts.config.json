@@ -1,0 +1,68 @@
+{
+    "context": {
+        "isDev": false,
+        "subHeading": {
+            "text": "Featured products"
+        },
+        "Products": [
+            {
+                "Product": {
+                    "image": "beautiful-casual-clothing-206558.jpg",
+                    "price": "50.00",
+                    "title": "Womens Evening Dress",
+                    "onSale": false,
+                    "currency": "$",
+                    "salePrice": "30.00"
+                },
+                "iconButton": {
+                    "isDev": false,
+                    "icon": {
+                        "heart": "fa-heart",
+                        "basket": "fa-shopping-bag",
+                        "details": "fa-tshirt",
+                        "details-alt": "fa-search"
+                    }
+                }
+            },
+            {
+                "Product": {
+                    "image": "attractive-beautiful-beauty-206560.jpg",
+                    "price": "65.00",
+                    "title": "Sand Long Sleeve Tee",
+                    "onSale": true,
+                    "currency": "$",
+                    "salePrice": "45.00"
+                },
+                "iconButton": {
+                    "isDev": false,
+                    "icon": {
+                        "heart": "fa-heart",
+                        "basket": "fa-shopping-bag",
+                        "details": "fa-tshirt",
+                        "details-alt": "fa-search"
+                    }
+                }
+            },
+            {
+                "Product": {
+                    "image": "fashion-female-girl-41539.jpg",
+                    "price": "18.95",
+                    "title": "Long Sleeve Plain White",
+                    "onSale": false,
+                    "currency": "$",
+                    "salePrice": "11.50"
+                },
+                "iconButton": {
+                    "isDev": false,
+                    "icon": {
+                        "heart": "fa-heart",
+                        "basket": "fa-shopping-bag",
+                        "details": "fa-tshirt",
+                        "details-alt": "fa-search"
+                    }
+                }
+            }    
+        ]
+        
+    }
+}

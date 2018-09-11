@@ -1,5 +1,7 @@
+$header-height-sm: 80px
+  
 .header
-  position: fixed
+  position: absolute
   width: 100%
   top: 0 
   left: 0
@@ -8,7 +10,29 @@
   // line-height: $headerHeight
   z-index: 1100
   overflow: hidden
+  transition: transform 0.3s ease-in-out
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.5)
+  overflow: hidden
+
+  &--scrolled
+    height: $header-height-sm
+    border-bottom: 0.5px solid #ccc
+    position: fixed
+
+    .logo__wrapper
+      height: $header-height-sm !important
+      a
+        height: $header-height-sm !important
+        align-items: center !important
+        img
+          max-width: 85px !important
+
+    li
+      height: $header-height-sm !important
+      align-items: center !important
+      a
+        margin-bottom: 0px !important
+        font-size: 11px !important
 
   &--no-shadow
     box-shadow: none
@@ -18,8 +42,8 @@
       height: 100%
       display: flex
       align-items: center
-      padding:
-        left: 20px
+      // padding:
+        // left: 20px
 
       a
         display: block
@@ -59,7 +83,7 @@
             transform: uppercase
             decoration: none          
           color: lighten($color-dark-gray, 20%)
-          transition: all 0.2s ease-in-out
+          transition: color 0.2s ease-in-out
           position: relative
 
           &.active
