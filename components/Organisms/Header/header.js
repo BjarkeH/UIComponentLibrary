@@ -1,5 +1,9 @@
 window.addEventListener('scroll', function(){
-    console.log(window.scrollY)
+
+    /**
+     * Turn on for debuggin scroll location on the window
+     */
+    //console.log(window.scrollY)
 
     var position = window.scrollY;
     var headerElem = document.querySelector('header');
