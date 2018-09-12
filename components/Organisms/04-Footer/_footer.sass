@@ -1,7 +1,7 @@
 .instagram
   display: flex 
   height: 300px
-  margin-top: 260px
+  margin-top: 160px
 
   &__img
     width: 20%
@@ -17,5 +17,69 @@
   background: white
   border-top: 1px solid #ccc
   // height: 200px
-  padding: 30px 0px
+  padding: 50px 0px  
   font-family: $font-brand-text
+
+  .increased-spacing
+    margin-top: 30px
+    margin-bottom: 30px
+
+  &__label
+    font-weight: bold
+    display: block
+    position: absolute
+    bottom: calc(100% + 5px)
+    left: 15px
+    font-size: 11px
+    color: lighten(#827b8b, 10%)
+
+
+  &__link
+    color: darken($color-light-blue, 30%)
+    color: #009bff
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
+
+  ul
+    margin-top: 30px
+
+    @include breakpoint('mobile')
+      margin-top: 10px
+
+    &.footer__ul--inbetween
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+    li
+      padding-left: 15px
+      position: relative
+      margin:
+        top: 20px
+        bottom: 20px
+
+      &::after
+        content: ''
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+        width: 5px
+        height: 5px
+        // border-radius: 100%
+        background: $color-dark-pink
+
+  &__logo
+    max-width: 60%
+
+    &__wrapper
+      display: flex
+      justify-content: flex-end
+      align-items: center
+
+.copyrights
+  padding: 20px 0px
+  background: lighten($color-faded-gray, 40%)
+  border-top: 1px solid $color-faded-gray

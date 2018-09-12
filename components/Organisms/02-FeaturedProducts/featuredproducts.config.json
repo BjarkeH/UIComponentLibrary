@@ -61,7 +61,68 @@
                         "details-alt": "fa-search"
                     }
                 }
-            }    
+            },
+            {
+                "Product": {
+                    "image": "pexels-photo-234575.jpeg",
+                    "price": "50.00",
+                    "title": "Bodyheater Vest",
+                    "onSale": false,
+                    "currency": "$",
+                    "salePrice": "25.00",
+                    "largeImage": true
+                },
+                "iconButton": {
+                    "isDev": false,
+                    "icon": {
+                        "heart": "fa-heart",
+                        "basket": "fa-shopping-bag",
+                        "details": "fa-tshirt",
+                        "details-alt": "fa-search"
+                    }
+                }
+            },
+            {
+                "Product": {
+                    "image": "AssetTee.jpg",
+                    "price": "8.95",
+                    "title": "Stmt. Print Tee",
+                    "onSale": false,
+                    "currency": "$",
+                    "salePrice": "11.50",
+                    "largeImage": false
+                },
+                "iconButton": {
+                    "isDev": false,
+                    "icon": {
+                        "heart": "fa-heart",
+                        "basket": "fa-shopping-bag",
+                        "details": "fa-tshirt",
+                        "details-alt": "fa-search"
+                    }
+                }
+            },
+            {
+                "Product": {
+                    "image": "adolescent-brunette-casual-41366.jpg",
+                    "price": "11.95",
+                    "title": "Neutral Casual T-shirt",
+                    "onSale": true,
+                    "currency": "$",
+                    "salePrice": "5.50",
+                    "largeImage": false
+                },
+                "iconButton": {
+                    "isDev": false,
+                    "icon": {
+                        "heart": "fa-heart",
+                        "basket": "fa-shopping-bag",
+                        "details": "fa-tshirt",
+                        "details-alt": "fa-search"
+                    }
+                }
+            }
+
         ]
         
     }

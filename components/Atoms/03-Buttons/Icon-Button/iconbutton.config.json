@@ -8,7 +8,8 @@
                 "basket": "fa-shopping-basket",
                 "heart": "fa-heart",
                 "details": "fa-tshirt",
-                "details-alt": "fa-search"
+                "details-alt": "fa-search",
+                "user": "fa-user"
             }
         }
     }

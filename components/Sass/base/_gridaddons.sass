@@ -3,6 +3,19 @@ img
   
 .demo
   margin-top: 50px
+  position: relative
+
+  &::after
+    content: 'Desktop'
+    position: absolute
+    top: -30px
+    left: 50%
+    transform: translateX(-50%)    
+
+    @include breakpoint('tablet')
+      content: 'tablet'
+    @include breakpoint('mobile')
+      content: 'mobile'
 
 .site-content
   padding-top: $headerHeight

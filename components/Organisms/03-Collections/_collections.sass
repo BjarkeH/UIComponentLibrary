@@ -4,11 +4,20 @@
     float: right
     width: 50%
     margin-bottom: 40px
+
+    @include breakpoint('mobile')
+      width: 100%
+
   h2
     margin-bottom: 20px
     // float: right 
     width: 100%
     text-align: right
+
+    @include breakpoint('mobile')
+      font-size: 36px
+      text-align: left
+
   p
     // float: right
     width: 100%
@@ -16,6 +25,9 @@
     margin-bottom: 20px
     color: lighten($color-dark-gray, 10%)
     line-height: 1.8em
+
+    @include breakpoint('mobile')
+      text-align: left
 
   &__double
     display: flex
@@ -28,6 +40,24 @@
     position: relative
     overflow: hidden
     cursor: pointer
+
+    @include breakpoint('laptop')
+      height: 285px
+      margin-bottom: 15px
+
+      &:last-of-type
+        margin-top: 15px
+        margin-bottom: 0px
+
+
+
+    @include breakpoint('tablet')
+      height: 250px
+      margin-top: 30px
+
+    @include breakpoint('mobile')
+      height: 250px
+      margin-top: 30px
 
     h4
       margin-bottom: 30px
@@ -61,10 +91,16 @@
         background: linear-gradient(to right, rgba(69, 104, 220, 0.85), rgba(176, 106, 179, 0.85))
 
   &__jumbo
-    height: 500px
+    height: 600px
     position: relative
     overflow: hidden
     cursor: pointer
+
+    @include breakpoint('tablet')
+      height: 350px
+
+    @include breakpoint('mobile')
+      height: 285px
 
     &:hover
       .collection-list
@@ -140,6 +176,9 @@
       size: 44px
     text-transform: uppercase
     text-align: center
+
+    @include breakpoint('mobile')
+      margin-bottom: 30px
 
 .caption
   text-align: center

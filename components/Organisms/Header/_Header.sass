@@ -19,6 +19,15 @@ $header-height-sm: 80px
     border-bottom: 0.5px solid #ccc
     position: fixed
 
+    nav
+      ul
+        padding-right: 150px
+
+    .header__buttons
+      top: 50% !important
+      transform: translateY(-50%)
+
+
     .logo__wrapper
       height: $header-height-sm !important
       a
@@ -59,7 +68,18 @@ $header-height-sm: 80px
     width: 100%
     display: flex
     justify-content: flex-end
+    position: relative
     
+    .header__buttons
+      position: absolute
+      top: 50px
+      right: 0
+
+      button
+        margin:          
+          // right: 30px
+          left: 30px
+
     ul
       
 

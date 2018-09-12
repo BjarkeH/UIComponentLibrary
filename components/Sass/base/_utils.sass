@@ -1,24 +1,18 @@
-.hidden    
-    &-sm
+.hide
+    &-on-mobile
         @include breakpoint('mobile')
-            display: none
-        
+            display: none !important
+    &-on-tablet
         @include breakpoint('tablet')
-            display: none
-        @include breakpoint('phablet')
-            display: none
-        
-        @include breakpoint('desktop')
-            display: block
+            display: none !important
 
-    &-xs
-        @include breakpoint('mobile')
-            display: none
-        
+    &-inbetween-tablet-laptop
+        @media screen and (max-width: 990px) and (min-width: 768px)
+            display: none !important
+
+    &-from-tablet-to-mobile
         @include breakpoint('tablet')
-            display: block
-        @include breakpoint('phablet')
-            display: block
-        
-        @include breakpoint('desktop')
-            display: block
+            display: none !important
+
+        @include breakpoint('mobile')
+            display: none !important

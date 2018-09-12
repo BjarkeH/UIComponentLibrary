@@ -1,0 +1,10 @@
+{
+    "context": {
+        "iconButton": {
+            "icon": {
+                "basket": "fa-shopping-basket",
+                "user": "fa-user"
+            }
+        }
+    }
+}

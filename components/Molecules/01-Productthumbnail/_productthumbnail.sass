@@ -6,6 +6,13 @@
         border-radius: 20px
         overflow: hidden      
         transition: border-color 0.2s ease-in
+        margin-bottom: 15px
+        margin-top: 15px
+
+        @include breakpoint('mobile')
+
+            margin-bottom: 15px !important
+            margin-top: 15px !important
 
         &:hover
             border: 1px solid $color-brand-pink
@@ -34,6 +41,28 @@
             justify-content: center
             align-items: flex-end
             overflow: hidden
+
+            &--increased-img
+                a
+                    img
+                        max-width: 100% !important
+
+            @include breakpoint('laptop')
+                height: 250px
+
+                a
+                    img
+                        max-width: 50% !important
+
+            @include breakpoint('tablet')
+                height: 260px
+
+            @include breakpoint('mobile')
+                height: 260px
+
+                a
+                    img
+                        max-width: 45% !important
 
             a
                 text-align: center

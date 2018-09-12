@@ -4,9 +4,17 @@
         margin:
             bottom: 20px
 
+        h2
+            @include breakpoint('mobile')
+                width: 100% !important
+                font-size: 36px !important
+
     &__short-text
         p
             width: 50%
             margin-bottom: 40px
             color: lighten($color-dark-gray, 10%)
             line-height: 1.8em
+
+            @include breakpoint('mobile')
+                width: 100%

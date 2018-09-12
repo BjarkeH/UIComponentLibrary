@@ -1,0 +1,56 @@
+.textimagesplit
+
+    &__content        
+        // padding:
+        //     top: 20px
+        //     bottom: 20px
+
+    &__heading
+        h2
+            width: 100%
+            padding-right: 20px
+
+    &__text
+        margin-top: 30px
+
+        button
+            margin-top: 30px        
+    
+    &__img
+        height: 500px
+        background: linear-gradient(90deg,rgba(142,158,171,.85),rgba(113,133,149,.85))
+        padding: 30px
+        position: relative
+        background: 
+            image: url('../images/blogger.jpeg')
+            position: center
+            size: cover
+
+        @include breakpoint('mobile')
+            margin-top: 30px
+            margin-bottom: 30px
+
+        @include breakpoint('tablet')
+            margin-top: 30px
+            margin-bottom: 30px
+        // &::after
+        //     content: ''
+        //     position: absolute
+        //     top: 30px
+        //     left: 30px
+        //     background: 
+        //         image: url('../images/blogger.jpeg')
+        //         position: center
+        //         size: cover
+        //     width: calc(100% - 60px)
+        //     height: calc(100% - 60px)
+
+        &--lg
+            height: 700px
+
+        &--xl
+            height: 800px
+        &--sm
+            height: 350px
+        &--xs
+            height: 250px
