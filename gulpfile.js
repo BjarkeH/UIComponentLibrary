@@ -11,6 +11,7 @@ var concat = require('gulp-concat');
 var fractal = require('./fractal.js');
 const logger = fractal.cli.console; // Storing a reference to the fractal CLI console utility
 
+const chalk = require('chalk');
 
 /**
  * Custom Build tools
@@ -21,7 +22,7 @@ const logger = fractal.cli.console; // Storing a reference to the fractal CLI co
  * Look into FTP 
  */
 
-gulp.task("scripts", ()=> {
+gulp.task("scripts", function() {
   return gulp
     .src('./Components/**/*.js')
     .pipe(sourcemaps.init())
@@ -30,7 +31,7 @@ gulp.task("scripts", ()=> {
     .pipe(gulp.dest('www/assets/js/'));
 });
 
-gulp.task('compile:sass', ()=> {
+gulp.task('compile:sass', function() {
   return gulp
     .src(['./Components/**/*.sass', './Components/**/*.scss'])
     .pipe(sourcemaps.init())
@@ -39,6 +40,9 @@ gulp.task('compile:sass', ()=> {
       outputStyle: 'expanded',
       sourceMap: true,
       // indentedSyntax: true
+      // onError: function(err){
+      //   console.log(chalk.red(err.message))
+      // }
     }).on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(flatten())
@@ -51,18 +55,20 @@ gulp.task('compile:sass', ()=> {
     .pipe(gulp.dest('./www/assets/css'));
 });
 
-gulp.task('watchers:start', ()=> {
-  gulp.watch(['./Components/**/*.sass', './Components/**/*.scss'], ['compile:sass']);
-  gulp.watch('./Components/**/*.js', ['scripts']);
+gulp.task('watchers:start', function() {
+  // gulp.watch(gulp.parallel('./Components/**/*.sass', './Components/**/*.scss'), 'compile:sass');
+  gulp.watch('./Components/**/*.sass', gulp.parallel('compile:sass'));
+  gulp.watch('./Components/**/*.scss', gulp.parallel('compile:sass'));
+  gulp.watch('./Components/**/*.js', gulp.parallel('scripts'));
 });
 
-gulp.task('default', ['fractal:start', 'compile:sass', 'scripts', 'watchers:start']);
+
 
 /**
  * Fractal related -v- 
  */
 // Start the fractal server with livereload
-gulp.task('fractal:start', ()=> {
+gulp.task('fractal:start', function() {
   const server = fractal.web.server({
     sync: true
   });
@@ -81,3 +87,6 @@ gulp.task('fractal:build', function(){
       logger.success('Fractal build completed!');
   });
 });
+
+
+gulp.task('default', gulp.series(['fractal:start', 'compile:sass', 'scripts', 'watchers:start']));
